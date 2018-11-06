@@ -1,0 +1,63 @@
+Questão 01.
+	Resposta: A;
+Questão 02.
+	Resposta: D;
+Questão 03.
+	Resposta: C;
+Questão 04.
+	Resposta: B;
+Questão 05.
+	Resposta: A;
+Questão 06.
+	Resposta: E;
+Questão 07.
+	Resposta: E;
+
+Questão 08.
+    public static int funcaoImplementarC() {
+	String a = "4321";
+	String b = "123";
+        
+        String c = "";
+        int limite = Math.max(a.length(), b.length());
+        for (int i = 0; i <= limite; i++) {
+            if (i < a.length()) {
+                c += a.charAt(i);
+            }
+            if (i < b.length()) {
+                c += b.charAt(i);
+            }
+        }
+
+	int valorC = Integer.ParseInt(c);
+	if(valorC > new BigInteger(1000000)){
+		return -1;
+	}else return valorC;
+   }
+
+
+Questão 09.
+public class BinaryTree {
+	int valor;
+	BinaryTree left;
+	BinaryTree right;
+
+	soma = pesquisa(valor);
+}
+
+
+	public int pesquisa(int chave)
+	{ 
+		No atual = raiz; // começa na raiz
+		int somaEsquerda = 0;
+		int somaDireita = 0;
+		while (atual.valor != chave) 
+		{
+			if (chave < atual.codigo) // ir para esquerda?
+				somaEsquerda = somaEsquerda + atual.filhoEsquerda;
+			else
+				somaDireita = somaDireita + atual.filhoDireita;
+			
+		}
+		return somaEsquerda + somaDireita;
+	} /
